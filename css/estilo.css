@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+/* Header y Barra de Navegacion */
+
+.header-barra {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  /* position: fixed;
+  z-index: 10; */
+  top: 0;
+  left: 0;
+  box-shadow: 0px 1px 10px #999;
+}
+
+.containerHeader {
+  width: 90%;
+  max-width:100%;
+  margin: auto;
+}
+
+.logo {
+  float: left;
+  line-height: 85px;
+}
+
+.logo img {
+  width: 100%;
+  height: 85px;
+}
+
+.menu {
+  float: right;
+  line-height: 85px;
+}
+
+.menu a {
+  color: #004aad;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+  line-height: normal;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #51c7f4;
+  background-color: #004aad;
+  padding: 10px 15px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+/* Estilos al boton de Menú */
+#btn-menu {
+  display: none;
+}
+
+.boton {
+  float: right;
+  display: none;
+}
+
+.boton label {
+  color: #ccced8;
+  background-color: #004aad;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* codigo para dispositivos mobiles */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .header {
+    height: 100px;
+  }
+
+  .logo, .boton {
+    line-height: 60px;
+  }
+
+  .logo .img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .menu {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    top: 90px;
+    left: 0;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+    /* box-shadow: 0px 1px 10px #999; */
+  }
+
+  #btn-menu:checked~.menu {
+    transform: translateX(0%);
+  }
+
+  .menu a {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .boton {
+    display: block;
+  }
+}
+
+/* FIN del Header y Barra de Navegacion */
+
+
+
+
+
+
+/* Formulario Contacto */
+
+.fondo {
+  background-image: url(../img/cielo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.formu h4 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #717b85;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.formu h1 {
+  font-size: 50px;
+  color: #004aad;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.registro {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 700px;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.registro p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.registro a {
+  text-decoration: none;
+  color: #004aad;
+}
+
+.registro a:hover {
+  text-decoration: underline;
+  color: #51c7f4;
+}
+
+.registro label {
+  width: 45%;
+  font-family: "Lato", sans-serif;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  border: 1px solid #ccced8;
+  padding: 15px 15px 15px 15px;
+  border-radius: 6px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #717b85;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.registro .formGroup {
+  padding: 0 0 15px;
+  position: relative;
+  display: block;
+  color: #717b85;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+}
+
+.controls {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #717b85;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #717b85;
+}
+
+.botonRegistrar {
+  display: inline-block;
+  color: #fff;
+  line-height: 60px;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0 46px;
+  border-radius: 30px;
+  border-style: none;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+  background-color: #8268fc;
+}
+
+.botonRegistrar:hover {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border-style: none;
+  background-color: #ffaa00;
+}
+
+/* Fin de formulario Contacto */
+
+/* Pagina Index Galeria */
+
+.linea{
+  margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px;
+}
+
+.contenedor-imagenes .imagen{
+  width: 32%;
+  position: relative;
+  height: 250px;
+  margin-bottom: 5px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, .75);
+}
+
+.imagen img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay{
+  position:  absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 118, 192, 0.781);
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: .5s ease;
+}
+
+.overlay h2{
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+  height: 100%;
+  cursor: pointer;
+}
+/* Fin Pagina Index Galeria */
+
+/* Media Queries Galeria Index */
+@media screen and (max-width:1000px){
+.contenedor-imagenes{
+  width: 95%;
+}
+}
+  
+@media screen and (max-width:700px){
+  .contenedor-imagenes{
+    width: 90%;
+  }
+  .contenedor-imagenes .imagen{
+    width: 48%;
+  }
+}
+
+@media screen and (max-width:450px){
+  .contenedor-imagenes{
+    width: 98%;
+  }
+  .contenedor-imagenes .imagen{
+    width: 80%;
+  }
+}
+
+
+
+/* Pie de Pagina */
+
+.pie-pagina {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 4px 4px 10px 10px #999;
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 200px;
+}
+
+.pie-pagina .grupo-1 .box h3 {
+  color: #1f1f1f;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+  color: #1f1f1f;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #004aad;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: #51c7f4;
+}
+
+.pie-pagina .grupo-2 {
+  background-color: #004aad;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.pie-pagina .grupo-2 {
+  font-size: 15px;
+}
+
+.subir {
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  line-height: 40px;
+  background-color: #51c7f4;
+  border-radius: 50%;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 50px;
+  right: 50px;
+  background-color: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background-color: #fff;
+
+}
+
+/* Fin Pie de Pagina */
+
+/* Responsive */
+
+@media screen and (max-width:800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+
