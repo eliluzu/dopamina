@@ -13,14 +13,14 @@
   width: 100%;
   height: 100px;
   background-color: #fff;
-  /* position: fixed;
-  z-index: 10; */
+  position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   box-shadow: 0px 1px 10px #999;
 }
 
-.containerHeader {
+.contenedorHeader {
   width: 90%;
   max-width: 100%;
   margin: auto;
@@ -31,6 +31,7 @@
   line-height: 85px;
   animation: 1s flash 1;
 }
+
 .logo {
   float: left;
   line-height: 85px;
@@ -64,6 +65,7 @@
   transition: 0.5s;
 }
 
+
 /* Estilos al boton de Menú */
 #btn-menu {
   display: none;
@@ -75,16 +77,12 @@
 }
 
 .boton label {
-  color: #ccced8;
-  background-color: #004aad;
+  color: #004aad;
   padding: 5px;
   font-size: 14px;
   border-radius: 3px;
   cursor: pointer;
 }
-
-
-
 
 
 /* codigo para dispositivos mobiles */
@@ -93,7 +91,8 @@
     height: 100px;
   }
 
-  .logo, .boton {
+  .logo,
+  .boton {
     line-height: 60px;
   }
 
@@ -106,7 +105,7 @@
     position: absolute;
     background-color: #fff;
     width: 100%;
-    height: 100vh;
+    height: auto;
     top: 90px;
     left: 0;
     transition: all 500ms ease;
@@ -142,127 +141,30 @@
 
 /* FIN del Header y Barra de Navegacion */
 
+.bg-jumbotron {
+  background-image: url(../img/ojo.jpg);
+  background-size: cover;
+  background-position: 50%;
+  height: 80vh;
+}
 
+.card img {
+  width: 50%;
+  margin-left: 50px;
+  margin-top: 10px;
+}
 
-
+.somosContenedor {
+  margin: 8em auto 5em;
+}
 
 
 /* Formulario Contacto */
-
-.fondo {
-  background-image: url(../img/cielo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+.container {
+  margin: 8em 5em;
 }
 
-
-.formu h4 {
-  font-size: 22px;
-  margin-bottom: 30px;
-  color: #717b85;
-  font-weight: lighter;
-  text-align: center;
-}
-
-.formu h1 {
-  font-size: 50px;
-  color: #004aad;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.registro {
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  width: 700px;
-  height: auto;
-  margin: 0 auto;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-}
-
-.registro p {
-  height: 40px;
-  text-align: center;
-  font-size: 18px;
-  line-height: 40px;
-}
-
-.registro a {
-  text-decoration: none;
-  color: #004aad;
-}
-
-.registro a:hover {
-  text-decoration: underline;
-  color: #51c7f4;
-}
-
-.registro label {
-  width: 45%;
-  font-family: "Lato", sans-serif;
-  display: inline-block;
-  text-align: left;
-  position: relative;
-  border: 1px solid #ccced8;
-  padding: 15px 15px 15px 15px;
-  border-radius: 6px;
-  margin: 5px;
-  cursor: pointer;
-  font-size: 18px;
-  color: #717b85;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.registro .formGroup {
-  padding: 0 0 15px;
-  position: relative;
-  display: block;
-  color: #717b85;
-  font-size: 18px;
-  font-family: "Lato", sans-serif;
-}
-
-.controls {
-  width: 100%;
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid #717b85;
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
-  color: #717b85;
-}
-
-.botonRegistrar {
-  display: inline-block;
-  color: #fff;
-  line-height: 60px;
-  font-size: 16px;
-  font-weight: 900;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 0 46px;
-  border-radius: 30px;
-  border-style: none;
-  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
-  background-color: #8268fc;
-}
-
-.botonRegistrar:hover {
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 30px;
-  border-style: none;
-  background-color: #ffaa00;
-}
-
-/* Fin de formulario Contacto */
+/* Fin Formulario Contacto */
 
 /* Pagina Index Galeria */
 
@@ -277,6 +179,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   border-radius: 3px;
+  margin-bottom: 50px;
 }
 
 .contenedor-imagenes .imagen {
@@ -349,13 +252,12 @@
 }
 
 
-
 /* Pie de Pagina */
 
 .pie-pagina {
   width: 100%;
   background-color: #fff;
-  box-shadow: 4px 4px 10px 10px #999;
+  box-shadow: 0px 1px 10px #999;
 }
 
 .pie-pagina .grupo-1 {
@@ -420,17 +322,17 @@
 }
 
 .subir {
-  width: 40px;
-  height: 40px;
-  font-size: 25px;
-  line-height: 40px;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 45px;
   background-color: #51c7f4;
   border-radius: 50%;
   color: black;
   border: 2px solid black;
   text-align: center;
   position: fixed;
-  right: 20px;
+  right: 30px;
   bottom: 20px;
 }
 
@@ -439,8 +341,8 @@
   width: 55px;
   height: 55px;
   line-height: 55px;
-  bottom: 50px;
-  right: 50px;
+  bottom: 20px;
+  left: 50px;
   background-color: #0df053;
   color: #fff;
   border-radius: 50px;
